@@ -55,15 +55,45 @@ $("#b").mousedown(function(){
 	
 		$(window).keypress(function(letter) {
 		var key= letter.keyCode
-		if (key === 100) 
+		if (key === 97) 
 		{
 			cNote.currentTime=0;
 			cNote.play();
 		}
-			else if(key===99)
+			else if(key===115)
 			{
 				dNote.currentTime=0;
 				dNote.play();
+			}
+			
+			else if(key===100)
+			{
+				eNote.currentTime=0;
+				eNote.play();
+			}
+			
+			else if(key===102)
+			{
+				fNote.currentTime=0;
+				fNote.play();
+			}
+			
+			else if(key===103)
+			{
+				gNote.currentTime=0;
+				gNote.play();
+			}
+			
+			else if(key===104)
+			{
+				aNote.currentTime=0;
+				aNote.play();
+			}
+			
+			else if(key===106)
+			{
+				bNote.currentTime=0;
+				bNote.play();
 			}
 });
 	
