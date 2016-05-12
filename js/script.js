@@ -1,16 +1,5 @@
 $(document).ready(function(){
 	
-	
-//	/////////////////////////////////////////////////
-//var cNote = document.getElementById("cAudio");
-//	$("#c").mousedown(function(){
-//	cNote.currentTime=0;
-//	cNote.play();
-//});
-//	
-///////////////////////////////////////////////////////
-//	var dNote = document.getElementById("dAudio");
-
 $(".box").mousedown(function(){
 		playNote(this.id);
 });
@@ -56,9 +45,17 @@ $(".box").mousedown(function(){
 //	});
 /////////////////////////////////////////////
 	
+		
+	var cNote = document.getElementById("cAudio");
+	
+	var dNote = document.getElementById("dAudio");
+
+			
+		}
+	
 		$(window).keypress(function(letter) {
-		var key= letter.keyCode
-		if (key === 97) 
+			var key= letter.keyCode
+			if (key === 97) 
 		{
 			cNote.currentTime=0;
 			cNote.play();
